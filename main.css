@@ -27,18 +27,23 @@ img.logo {
 .img {
   height: fit-content;
   max-width: min-content;
-  text-align:center;
+  text-align: center;
   display: flex;
   float: left;
 }
 
 .img-sized {
-    max-width: 200px;
-    max-height: 200px;
-    padding-right: 16px;
+    width: 100%;
+    height: auto; /* preserves aspect ratio */
+    display: block;
+    margin: 0 auto; /* center horizontally */
+    /* max-width: 200px; */
+    /* max-height: 200px;
+    margin-right: 16px;
+    margin-top: 32px;
     height: fit-content;
     max-width: min-content;
-    float: left;
+    float: left; */
 }
 
 .pphi {
@@ -237,4 +242,21 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border-top: 1px solid #eeeeee;
+}
+
+.table-fixed {
+    width: 100%; 
+    table-layout: fixed;
+    border-spacing: 20px;
+}
+
+.cell-right {
+    width: 75%; 
+    vertical-align: middle;
+}
+
+.cell-left {
+    width: 25%; 
+    vertical-align: middle;
+    text-align: center;
 }

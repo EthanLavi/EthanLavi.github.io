@@ -1,39 +1,78 @@
 <html>
-    <head>  
-        <title>Ethan Lavi - Projects</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="left-float">
-                <h1>
-                    <b>Projects</b>
-                </h1>
-            </div>
-            <div class="navbar right-float hmargin">
-                <a href="projects.html"><i class="fa fa-fw fa-server"></i>Projects</a>
-                <a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
-            </div>
-        </div>
-        <hr>
-        <div id="projects" class="pph">
-            <img class="img-sized" src="./img/todo.png" alt="Brown">
-            <h3><b>(UNDER CONSTRUCTION)</b></h3>
-            <p>
-                At Brown, I am involved in a few projects. In short, I am building a communication abstraction for distributed systems. More information to come...
-            </p>
-        </div>
-        <br><br><br><br>
-        <div id="projects" class="pph">
-            <img class="img-sized" src="./img/datacenter_crop.png" alt="Data Center Networking">
-            <h3><b>RDMA Data Structures</b></h3>
-            <p>
-                In my undergraduate, I built concurrent data structures using one-sided RDMA. In total, I implemented three novel designs of a B+Tree, skiplist, and an IHT (Inter-locked hashtable). I also designed a software-cache for one-sided RDMA that enabled a high-performance design by optimizing the read-heavy traversals of the tree-like indexes in the B+Tree, skiplist, and IHT.
-            </p>
-        </div>
-    </body>
+	<head>
+		<title>Ethan Lavi - Projects</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=yes"
+		/>
+		<link rel="stylesheet" href="main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left-float">
+				<h1>
+					<b>Projects</b>
+				</h1>
+			</div>
+			<div class="navbar right-float hmargin">
+				<a href="projects.html"><i class="fa fa-fw fa-server"></i>Projects</a>
+				<a href="index.html" class="active"
+					><i class="fa fa-fw fa-home"></i>Home</a
+				>
+			</div>
+		</div>
+		<hr />
+		<table class="table-fixed">
+			<tr>
+				<td class="cell-left">
+					<img class="img-sized" src="./img/ds.png" alt="Brown" />
+				</td>
+				<td class="cell-right">
+					<h3><b>Tunable Communication for Distributed Systems</b></h3>
+					<p>
+                        <i>(Spring 2025 - Present)</i>
+						At Brown, I am building a communication layer for distributed
+						systems. This system has two main contributions:
+						<br />
+						1) By fitting the guarantees provided by the communication layer to
+						the exact needs of the distributed system, we are able to improve
+						the performance of the system.<br />
+						2) Our abstraction allows a developer to cleanly and rapidly specify
+						the communication pattern they want for their distributed system.
+						<br />
+						My distributed communication abstraction, Tundra, utilizes DPDK for
+						low-latency networking, and has the ability to switch this backend
+						to kernel sockets or a virtualized debugging interface.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell-left">
+					<img
+						class="img-sized"
+						src="./img/rdma.png"
+						alt="Data Center Networking"
+					/>
+				</td>
+				<td class="cell-right">
+					<h3><b>RDMA Data Structures</b></h3>
+					<p>
+                        <i>(Fall 2023 - Summer 2024)</i>
+						In my undergraduate, I built concurrent data structures using
+						one-sided RDMA. In total, I implemented three novel designs of a
+						B+Tree, skiplist, and an IHT (Inter-locked hashtable). I also
+						designed a software-cache for one-sided RDMA that enabled a
+						high-performance design by optimizing the read-heavy traversals of
+						the tree-like indexes in the B+Tree, skiplist, and IHT.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
