@@ -34,16 +34,9 @@ img.logo {
 
 .img-sized {
     width: 100%;
-    height: auto; /* preserves aspect ratio */
+    height: auto;
     display: block;
-    margin: 0 auto; /* center horizontally */
-    /* max-width: 200px; */
-    /* max-height: 200px;
-    margin-right: 16px;
-    margin-top: 32px;
-    height: fit-content;
-    max-width: min-content;
-    float: left; */
+    margin: 0 auto;
 }
 
 .pphi {
